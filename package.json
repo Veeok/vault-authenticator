@@ -1,6 +1,7 @@
 {
   "name": "authenticator",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "test": "pnpm -r test",
     "test:smoke": "pnpm --filter desktop test:smoke"

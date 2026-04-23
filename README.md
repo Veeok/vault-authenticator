@@ -1,6 +1,21 @@
+<p align="center">
+  <img src="apps/desktop/assets/icon.png" alt="Vault Authenticator icon" width="120">
+</p>
+
 # Vault Authenticator
 
 Offline TOTP authenticator for Electron desktop and Capacitor Android with encrypted local storage, lock methods, and encrypted backup support.
+
+## Feature Overview
+
+| Area | Status | Notes |
+| --- | --- | --- |
+| Offline TOTP generation | Implemented | Generates codes locally with RFC 6238-compatible logic |
+| Desktop app | Implemented | Electron desktop client with encrypted local storage |
+| Android app | Implemented | Capacitor Android client with QR scan and secure storage support |
+| Backup import/export | Implemented | Uses encrypted backup files with passphrase-based protection |
+| Lock methods | Implemented | Includes password, PIN, and platform-specific unlock support |
+| Cloud sync | Not included | Repository is intentionally offline-first |
 
 ## Features
 
@@ -56,6 +71,16 @@ pnpm --filter mobile exec tsc --noEmit
 pnpm --filter desktop make
 pnpm --filter mobile build
 ```
+
+## Validation
+
+| Command | Purpose |
+| --- | --- |
+| `pnpm test` | Run workspace test suites |
+| `pnpm --filter desktop exec tsc --noEmit` | Type-check desktop app |
+| `pnpm --filter mobile exec tsc --noEmit` | Type-check mobile app |
+| `pnpm --filter desktop make` | Build desktop distributables |
+| `pnpm --filter mobile build` | Build the mobile web bundle |
 
 ## Docs
 
