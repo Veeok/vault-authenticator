@@ -1,0 +1,33 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "android:assemble:release": "cd android && gradlew.bat assembleRelease",
+    "android:bundle:release": "cd android && gradlew.bat bundleRelease",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@aparajita/capacitor-secure-storage": "latest",
+    "@authenticator/backup": "workspace:*",
+    "@authenticator/core": "workspace:*",
+    "@authenticator/ui": "workspace:*",
+    "@capacitor-mlkit/barcode-scanning": "latest",
+    "@capacitor/android": "latest",
+    "@capacitor/cli": "latest",
+    "@capacitor/core": "latest",
+    "hash-wasm": "^4.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "typescript": "^5.4.0",
+    "vite": "^5.3.0",
+    "vite-plugin-node-polyfills": "^0.25.0",
+    "vitest": "^2.1.9"
+  }
+}

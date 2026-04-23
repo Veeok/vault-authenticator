@@ -1,0 +1,18 @@
+{
+  "name": "authenticator",
+  "private": true,
+  "scripts": {
+    "test": "pnpm -r test",
+    "test:smoke": "pnpm --filter desktop test:smoke"
+  },
+  "pnpm": {
+    "overrides": {
+      "string-width": "4.2.3",
+      "@tootallnate/once": "3.0.1",
+      "esbuild": "0.25.0",
+      "serialize-javascript": "7.0.3",
+      "tar": "7.5.10",
+      "tmp": "0.2.5"
+    }
+  }
+}

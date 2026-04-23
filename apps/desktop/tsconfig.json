@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "commonjs",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@authenticator/backup": ["../../packages/backup/src/index.ts"],
+      "@authenticator/core": ["../../packages/core/src/index.ts"],
+      "@authenticator/ui": ["../../packages/ui/src/index.ts"],
+      "@desktop-diagnostics": ["src/main/diagnostics.dev.ts"]
+    },
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "include": ["src", "forge.env.d.ts"]
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+out/
+.vite/
+.gradle/
+.idea/
+*.log
+*.tsbuildinfo
+*.jks
+*.keystore
+keystore.properties
+local.properties
